@@ -30,7 +30,7 @@ const Cards = ({ id, name, imageUrl2 }) => {
    
     
 
-    /* if (index === addFavorite) return 'bg-gradient-to-r from-green-500 to-green-700' */
+    
     
 
 
