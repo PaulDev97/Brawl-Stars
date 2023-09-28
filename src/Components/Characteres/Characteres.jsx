@@ -3,6 +3,7 @@ import { useFetch } from '../../hooks/useFetch';
 import Cards from './Cards';
 import Pagination from './Pagination';
 
+
 const Characteres = () => {
 
   const { data, loading } = useFetch('https://api.brawlapi.com/v1/brawlers');
@@ -23,6 +24,9 @@ const Characteres = () => {
 
   let characteresSlice = data?.slice(indexInitial, indexFinal)
 
+  
+
+
 
 
   
@@ -34,7 +38,7 @@ const Characteres = () => {
 
       {loading && <span>Cargando</span>}
 
-      <div className='w-[90%] h-[500px] border border-red-600 grid grid-cols-[repeat(auto-fill,minmax(120px,_1fr))] gap-8'>
+      <div className='w-[90%] h-[500px] grid grid-cols-[repeat(auto-fill,minmax(120px,_1fr))] gap-8'>
         {
           characteresSlice.map((item) =>
 
