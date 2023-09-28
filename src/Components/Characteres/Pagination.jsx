@@ -21,7 +21,7 @@ const Pagination = ({ setCurrentPage, currentPage, setLimitCharacteres, totalCha
 
 
   return (
-    <div className='flex flex-wrap gap-3 text-[#fafafa] mt-10 '>
+    <div className='flex flex-wrap gap-3 text-[#fafafa]  '>
       {
         pageNumbers.map(page => (
           <button

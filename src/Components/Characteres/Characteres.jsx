@@ -26,19 +26,16 @@ const Characteres = () => {
 
   
 
-
-
-
   
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='h-screen flex flex-col items-center justify-around'>
       <h2>Seccion Personajes</h2>
 
 
       {loading && <span>Cargando</span>}
 
-      <div className='w-[90%] h-[500px] grid grid-cols-[repeat(auto-fill,minmax(120px,_1fr))] gap-8'>
+      <div className='w-[80%] h-[500px] grid grid-cols-5 gap-16'>
         {
           characteresSlice.map((item) =>
 
