@@ -29,13 +29,13 @@ const Characteres = () => {
   
 
   return (
-    <div className='h-screen flex flex-col items-center justify-around'>
+    <div className='phone:w-full phone:h-auto md:h-screen flex flex-col items-center justify-around phone:justify-between '>
       <h2>Seccion Personajes</h2>
 
 
       {loading && <span>Cargando</span>}
 
-      <div className='w-[80%] h-[500px] grid grid-cols-5 gap-16'>
+      <div className='phone:w-[90%]  phone:flex phone:flex-wrap phone:gap-10 phone:justify-center md:w-[80%] md:h-[500px] md:grid md:grid-cols-5 md:gap-16'>
         {
           characteresSlice.map((item) =>
 

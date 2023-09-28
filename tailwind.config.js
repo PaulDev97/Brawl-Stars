@@ -7,6 +7,13 @@ export default {
     
   ],
   theme: {
+    screens: {
+      
+      'phone': '300px',
+      md: "920px",
+      lg:"1024px"
+      
+    },
     extend: {},
   },
   plugins: [],
