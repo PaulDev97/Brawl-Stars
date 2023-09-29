@@ -5,6 +5,7 @@ import { create } from "zustand";
 export const useMenuStore = create((set,get) => {
   return {
     menu:'home',
+    hiddenMenu:false,
 
 
     selectedMenu: (category) => {
@@ -19,11 +20,19 @@ export const useMenuStore = create((set,get) => {
         set({ menu })
       }
 
-      
-      
+    },
 
+    toogleMenu: () => {
+      const { hiddenMenu } = get()
 
+      let change = hiddenMenu
+
+      set({ hiddenMenu: !change})
     }
+      
+      
+
+
     
   }
 })
