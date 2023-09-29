@@ -8,15 +8,19 @@ const Category = () => {
   const selectedMenu = useMenuStore((state) => state.selectedMenu)
   const menu = useMenuStore((state) => state.menu)
 
+  
 
 
   const selectButton = (category) => () => {
     selectedMenu(category)
   }
 
+
+
+
   return (
     
-      <div className='w-full mt-20 flex flex-col items-center gap-6'>
+      <div className='w-full md:mt-20 flex flex-col items-center gap-6 phone:bg-slate-300'>
         <NavLink
           to="/"
           onClick={selectButton('home')}
