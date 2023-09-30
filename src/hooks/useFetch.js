@@ -4,6 +4,7 @@ export const useFetch = (url) => {
 
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState([])
+  const [characterHome, setCharacterHome] = useState([])
 
   useEffect(() => {
 
@@ -14,6 +15,9 @@ export const useFetch = (url) => {
         const response = await fetch(url);
         const getDataApi = await response.json()
 
+        
+
+        setCharacterHome(getDataApi)
         setData(getDataApi.list)
         setLoading(false)
 
@@ -28,8 +32,8 @@ export const useFetch = (url) => {
   }, [url])
 
     
-  
+
     
-  return { data , loading }
+  return { data , loading , characterHome}
 
 }
