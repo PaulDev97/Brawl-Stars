@@ -5,6 +5,7 @@ import Characteres from '../Components/Characteres/Characteres'
 import Layout from '../Components/Layout/Layout'
 import Arenas from '../Components/Arenas/Arenas'
 import Favorites from '../Components/Favorites/Favorites'
+import CharacterInfo from '../Components/Characteres/CharacterInfo'
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
 
         <Route path='characteres'>
           <Route index element={<Characteres />} />
+          <Route path=':id' element={<CharacterInfo/>} />
         </Route>
 
         <Route path='arenas' element={<Arenas />} />

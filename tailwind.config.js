@@ -14,7 +14,11 @@ export default {
       lg:"1024px"
       
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        bungee: ['Bungee Spice', 'cursive']
+      }
+    },
   },
   plugins: [],
 }
