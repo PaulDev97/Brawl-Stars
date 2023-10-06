@@ -3,7 +3,7 @@ import { Routes as ReactRoutes, Route } from 'react-router-dom'
 import Home from '../Components/Home/Home'
 import Characteres from '../Components/Characteres/Characteres'
 import Layout from '../Components/Layout/Layout'
-import Arenas from '../Components/Arenas/Arenas'
+
 import Favorites from '../Components/Favorites/Favorites'
 import CharacterInfo from '../Components/Characteres/CharacterInfo'
 
@@ -21,7 +21,7 @@ const Routes = () => {
           <Route path=':id' element={<CharacterInfo/>} />
         </Route>
 
-        <Route path='arenas' element={<Arenas />} />
+        
 
         <Route path='favoritos' element={<Favorites/>} />
 

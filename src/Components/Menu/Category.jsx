@@ -44,13 +44,6 @@ const Category = () => {
           Characteres
         </NavLink>
 
-        <NavLink
-          to="arenas"
-          onClick={selectButton('arenas')}
-          className={`${menu === 'arenas' && 'bg-red-500 text-zinc-50'} transition-all duration-300  p-2 rounded-md w-[80%] flex justify-center items-center  `}
-        >
-          Arenas
-        </NavLink>
 
         <NavLink
           to="favoritos"
